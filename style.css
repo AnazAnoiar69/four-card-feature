@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #4c4e61;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+p {
+  line-height: 1.6;
+  color: #a3a5ae;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fafafa;
+}
+
+body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 4rem 1.5rem;
+}
+
+body .container .head-text {
+  text-align: center;
+}
+
+body .container .head-text .sub-heading {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+body .container .head-text .heading-desc {
+  padding: 1rem 0;
+  font-size: 0.8rem;
+}
+
+body .container .card-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 1.5rem;
+  position: relative;
+}
+
+body .container .card-list .card {
+  padding: 1.5rem;
+  -webkit-box-shadow: 0px 6px 16px -4px rgba(76, 78, 97, 0.5);
+          box-shadow: 0px 6px 16px -4px rgba(76, 78, 97, 0.5);
+  border-radius: 0.3rem;
+  width: 100%;
+}
+
+body .container .card-list .card > p {
+  font-size: 0.8rem;
+}
+
+body .container .card-list .card .card-icon {
+  padding: 2rem 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+body .container .card-list .card:nth-of-type(1) {
+  border-top: 4px solid #45d3d3;
+}
+
+body .container .card-list .card:nth-of-type(2) {
+  border-top: 4px solid #ea5353;
+}
+
+body .container .card-list .card:nth-of-type(3) {
+  border-top: 4px solid #fcaf4a;
+}
+
+body .container .card-list .card:nth-of-type(4) {
+  border-top: 4px solid #549ef2;
+}
+
+@media screen and (min-width: 768px) {
+  .card-list {
+    -webkit-column-gap: 1.5rem;
+            column-gap: 1.5rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .card-list .card {
+    -ms-flex-preferred-size: 45% !important;
+        flex-basis: 45% !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .head-text {
+    width: 50%;
+  }
+  .card-list {
+    width: 95%;
+    display: -ms-grid !important;
+    display: grid !important;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+  }
+  .card-list .card > p {
+    padding: 1rem 1.5rem 0 0;
+  }
+  .card-list .card:nth-of-type(1) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    grid-row: 2/4;
+  }
+  .card-list .card:nth-of-type(2) {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
+  }
+  .card-list .card:nth-of-type(3) {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    grid-row: 3/5;
+  }
+  .card-list .card:nth-of-type(4) {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    grid-row: 2/4;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .card-list {
+    width: 85%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
